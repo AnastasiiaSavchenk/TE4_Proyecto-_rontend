@@ -1,6 +1,6 @@
 var url = "https://thesimpsonsapi.com/api/characters?page=1";
 document.getElementById("season").addEventListener("click", () => {
-    window.location.href = "../html/visualizacion_de_datos.html";
+    window.location.href = "html/visualizacion_de_datos.html";
 });
 
 function makeCard(character) {
@@ -36,7 +36,7 @@ function makeCard(character) {
     charImg.width = 150;
 
     charImg.addEventListener("click", () => {
-        window.location.href = `../html/extra.html?id=${character.id}`;
+        window.location.href = `html/extra.html?id=${character.id}`;
     });
 
     card.appendChild(title);
